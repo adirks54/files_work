@@ -30,8 +30,8 @@ def get_shop_list_by_dishes(dishes, person_count):
                     our_list['quantity'] = int(ings['quantity']) * person_count
                     ingreds_list[ings['ingredient_name']] = our_list
                 else:
-                    ingreds_list[ings['ingredient_name']]['quantity'] = ingreds_list[ings['ingredient_name']]['quantity'] + \
-                                                                     int(ings['quantity']) * person_count
+                    ingreds_list[ings['ingredient_name']]['quantity'] = \
+                        ingreds_list[ings['ingredient_name']]['quantity'] + int(ings['quantity']) * person_count
 
         else:
             print("Такого нет в кулинарной книге!")
